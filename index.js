@@ -14,7 +14,7 @@ bot.on('guildMemberAdd', member=>{
     if(member.user.bot) return;
     else{
         if(!channel) return;
-        channel.send(`**Puts away cigarette**\nWelcome ${member}, read the rules if you are not a bot\n**Lights another and gazes into the void**`)
+        channel.send(`**Puts away cigarette**\nWelcome ${member}, please visit ${member.guild.channels.cache.get('755707226932379659').toString()}\n**Lights another and gazes into the void**`)
     }
 })
 
