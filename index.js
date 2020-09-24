@@ -11,7 +11,7 @@ bot.on('ready', () =>{
 bot.on('guildMemberAdd', member=>{
 
     const channel = member.guild.channels.cache.find(channel => channel.name === "general")
-    if(member.bot) return;
+    if(member.user.bot) return;
     else{
         if(!channel) return;
         channel.send(`**Puts away cigarette**\nWelcome ${member}, read the rules if you are not a bot\n**Lights another and gazes into the void**`)
