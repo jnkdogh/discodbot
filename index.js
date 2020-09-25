@@ -100,11 +100,7 @@ bot.on('message', msg=>{
         
         case 'yo':
             if(args[1] === 'kanye'){
-                msg.channel.send('piss on my grammy').then((message)=>{
-                    setTimeout(()=>{
-                        message.delete()
-                    }, 3000)
-                })
+                msg.channel.send('piss on my grammy');
             }
             else{
                 msg.reply('no no you only talk like that to the king, say his name!').then((message)=>{
